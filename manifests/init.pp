@@ -4,7 +4,7 @@ class aalvz_node {
     timeout  => 180,
   }
 
-  package {'curl':
+  package {['curl', 'sudo']:
     ensure => installed,
   } ->
 
